@@ -13,7 +13,7 @@ const Card = (props)=> {
                 {props.character.status +  "-" + props.character.species}
             </SubTitleContainer>
             <BodyContainer>
-                <LocationText title={true}>
+                <LocationText title={"true"}>
                         Last known location:
                 </LocationText>
                 <LocationText>
@@ -21,12 +21,12 @@ const Card = (props)=> {
                 </LocationText>
             </BodyContainer>
             <BodyContainer>
-                <FirstseenValue title={true}>
+                <FirstSeenValue title={"true"}>
                         First Seen in:
-                </FirstseenValue>
-                <FirstseenValue>
+                </FirstSeenValue>
+                <FirstSeenValue>
                         {props.character.name}
-                </FirstseenValue>
+                </FirstSeenValue>
             </BodyContainer>
         </DescriptionContainer>
     </Container> 
@@ -92,7 +92,7 @@ const BodyContainer = styled.div`
     margin-top:5%;
 `;
 
-const FirstseenValue = styled.text`
+const FirstSeenValue = styled.text`
     font-size:15px;
     color: ${props => (props.title  ? 'grey' : 'white')};
     font-weight:  ${props => (props.title  ? 'bold' : 'normal')}

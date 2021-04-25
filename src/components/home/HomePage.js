@@ -14,9 +14,10 @@ const HomePage = () => {
       fetchCharacter()
     }, [])
 
-    //In a big project I will move this API to an external file. Here, to have more speed to develop it I put this api in the same file
+    //I will move this API to an external file. Here, to have more speed to develop it I put this api in the same file
     const fetchCharacter = () => {
-      const url = 'https://rickandmortyapi.com/api/character'
+      //To add the pagination, I will change the number of the page to call in this api
+      const url = 'https://rickandmortyapi.com/api/character?page=1' 
       axios.get(url).then(response => {
           setCharacter(response.data)
           setIsLoading(false)
