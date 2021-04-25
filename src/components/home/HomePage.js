@@ -43,8 +43,7 @@ const HomePage = () => {
 
 const Head = styled.h1`
   font-size: 130px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 `;
 
 const ContainerCard = styled.div`

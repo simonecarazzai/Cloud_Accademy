@@ -11,6 +11,7 @@ const Container = styled.div`
     padding: 4% 0 3% 0;
     background-color: rgb(36, 40, 47);
     color:white;
+    text-align: center;
 `;
 
 export default Footer;
